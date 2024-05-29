@@ -4,12 +4,14 @@
 
   定位：app->res->values->styles
   在styles.xml中下滑到最后
-  修改代码为：
+  - 修改代码为：
 
-  >   <style name="NoteActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
-  >    <!--    <item name="android:displayOptions" />-->
-  >        <item name="android:visibility">visible</item>
-  >    </style>
+  ```HTML
+  <style name="NoteActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
+   <!--    <item name="android:displayOptions" />-->
+       <item name="android:visibility">visible</item>
+   </style>
+  ```
 
 - DataUtils.java
 
