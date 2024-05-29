@@ -1,17 +1,21 @@
+# 修改内容
+
 - 在运行测试时，发现功能缺失的现象，在查找资料后，解决此问题
 
   链接：[1](https://blog.csdn.net/m0_66137457/article/details/136762065)
 
   定位：app->res->values->styles
   在styles.xml中下滑到最后
-  - 修改代码为：
+  修改代码为：
 
-  ```HTML
+  ```html
   <style name="NoteActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
    <!--    <item name="android:displayOptions" />-->
        <item name="android:visibility">visible</item>
    </style>
   ```
+
+  
 
 - DataUtils.java
 
@@ -70,3 +74,16 @@
   ```
 
   
+
+# 运行
+
+1. 直接使用Android studio打开即可
+2. Android studio创建新项目，
+   Package name设定为net.micode.notes
+   Language选择Java
+   Build configuration language个人选用的是Groovy DSL
+   将代码文件中的notes下文件放入路径 `\app\src\main\java\net\micode\notes`
+   res下文件放入路径`\app\src\main\res`
+   app下build.gradle文件替换
+   `\app\src\main`下AndroidManifest.xml文件替换即可
+
